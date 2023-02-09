@@ -38,7 +38,7 @@ try
     var app = builder.Build();
     app.UseSerilogRequestLogging();
     app.UseMiddleware(typeof(chessAPI.customMiddleware<int>));
-    app.MapGet("/", () =>
+    app.MapGet("/", () =>////
     {
         return "hola mundo";
     });
